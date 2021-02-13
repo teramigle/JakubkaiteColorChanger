@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         linearLayout4 = findViewById(R.id.linearLayout4);
         button4 = findViewById(R.id.button4);
         int yellow = getResources().getColor(R.color.yellow);
+
         button1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         button3.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -76,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
         button4.setOnClickListener(new View.OnClickListener() {
 
             @Override

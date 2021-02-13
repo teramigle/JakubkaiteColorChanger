@@ -3,145 +3,94 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/gray"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:textColor="@color/black">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/color_green"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:gravity="center">
+        style="@style/linear1">
 
+        <TextView
+            style="@style/text"
+            android:text="@string/color_green">
         </TextView>
+
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/gray"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/color_red"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:gravity="center">
+        style="@style/linear1">
 
+        <TextView
+            style="@style/text"
+            android:text="@string/color_red">
         </TextView>
+
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/gray"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/color_blue"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:gravity="center">
+        style="@style/linear1">
 
+        <TextView
+            style="@style/text"
+            android:text="@string/color_blue">
         </TextView>
+
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/gray"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/color_yellow"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:gravity="center">
+        style="@style/linear1">
 
+        <TextView
+            style="@style/text"
+            android:text="@string/color_yellow">
         </TextView>
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/buttons"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
 
-
         <LinearLayout
             android:id="@+id/buttonBox1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            style="@style/buttonBox">
 
             <Button
                 android:id="@+id/button1"
-                android:text="Green"
-                android:textSize="20sp"
-                android:layout_width="160sp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:backgroundTint="@color/gray"
-                android:textColor="@color/black"/>
+                android:text="@string/green"
+                android:layout_gravity="start"
+                style="@style/button"/>
+
             <Button
                 android:id="@+id/button2"
-                android:text="Red"
-                android:textSize="20sp"
-                android:layout_width="160sp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:backgroundTint="@color/gray"
-                android:textColor="@color/black"
-                />
+                android:text="@string/red"
+                android:layout_gravity="start"
+                style="@style/button"/>
+
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/buttonBox2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            style="@style/buttonBox">
 
             <Button
                 android:id="@+id/button3"
-                android:text="Blue"
-                android:textSize="20sp"
-                android:layout_width="160sp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:backgroundTint="@color/gray"
-                android:textColor="@color/black"/>
+                android:text="@string/blue"
+                android:layout_gravity="end"
+                style="@style/button"/>
+
             <Button
                 android:id="@+id/button4"
-                android:text="Yellow"
-                android:textSize="20sp"
-                android:layout_width="160sp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:backgroundTint="@color/gray"
-                android:textColor="@color/black"/>
+                android:text="@string/yellow"
+                android:layout_gravity="end"
+                style="@style/button"/>
 
         </LinearLayout>
 
-
 </LinearLayout>
+
     <TextView
         android:id="@+id/app_name"
         android:layout_width="match_parent"
@@ -150,4 +99,5 @@
         android:textSize="20sp"
         android:gravity="center"
         android:layout_marginBottom="10sp"/>
+
 </LinearLayout>
